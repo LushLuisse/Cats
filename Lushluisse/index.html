@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Types Of Cats</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        body {
+            background: radial-gradient(circle at top, #ffffff, #A38550);
+            color: rgb(0, 0, 0);
+        }
+
+        .title {
+            text-align: center;
+            font-size: 60px;
+            font-weight: bold;
+            letter-spacing: 5px;
+            margin: 40px 0;
+            padding: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px;
+            padding: 20px;
+        }
+
+        .card {
+            background: #ffffff;
+            border-radius: 15px;
+            overflow: hidden;
+            font-style: italic;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+        }
+
+        .card-img {
+            height: 180px;
+            background-size: cover;
+            background-position: center;
+            border-bottom-left-radius: 15px;
+            border-bottom-right-radius: 15px;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover .card-img {
+            transform: scale(1.05);
+        }
+
+        .persian { background-image: url("one.webp"); }
+        .siamese { background-image: url("two.webp"); }
+        .mainecoon { background-image: url("three.webp"); }
+        .bengal { background-image: url("4.png"); }
+        .ragdoll { background-image: url("5.jpg"); }
+        .sphynx { background-image: url("6.jpg"); }
+        .british { background-image: url("7.jpg"); }
+        .abyssinian { background-image: url("8.jpg"); }
+
+        .card-content {
+            padding: 20px;
+        }
+
+        .card-content h2 {
+            margin-bottom: 10px;
+        }
+
+        .card-content p {
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        .footer-text {
+            text-align: center;
+            margin: 40px 0;
+            font-size: 24px;
+            letter-spacing: 3px;
+            padding: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Mobile (up to 600px) */
+        @media (max-width: 600px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+            .title {
+                font-size: 36px;
+            }
+        }
+
+        /* Tablet (601px – 900px) */
+        @media (min-width: 601px) and (max-width: 900px) {
+            .container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .title {
+                font-size: 48px;
+            }
+        }
+
+        /* Laptop (901px – 1200px) */
+        @media (min-width: 901px) and (max-width: 1200px) {
+            .container {
+                grid-template-columns: repeat(3, 1fr);
+            }
+            .title {
+                font-size: 54px;
+            }
+        }
+
+        /* Desktop (1201px and above) */
+        @media (min-width: 1201px) {
+            .container {
+                grid-template-columns: repeat(4, 1fr);
+            }
+            .title {
+                font-size: 60px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<h1 class="title">TYPES OF CATS</h1>
+
+<div class="container">
+
+    <div class="card">
+        <div class="card-img persian"></div>
+        <div class="card-content">
+            <h2>Persian Cat</h2>
+            <p>Persian cats are known for their long fur, flat faces, and calm nature.</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-img siamese"></div>
+        <div class="card-content">
+            <h2>Siamese Cat</h2>
+            <p>Siamese cats are vocal, social, and very affectionate.</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-img mainecoon"></div>
+        <div class="card-content">
+            <h2>Maine Coon</h2>
+            <p>Maine Coons are large, friendly cats with fluffy tails.</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-img bengal"></div>
+        <div class="card-content">
+            <h2>Bengal Cat</h2>
+            <p>Bengal cats have wild-looking spotted coats and high energy.</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-img ragdoll"></div>
+        <div class="card-content">
+            <h2>Ragdoll</h2>
+            <p>Ragdolls are gentle, relaxed cats that love human company.</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-img sphynx"></div>
+        <div class="card-content">
+            <h2>Sphynx</h2>
+            <p>Sphynx cats are hairless, affectionate, and playful.</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-img british"></div>
+        <div class="card-content">
+            <h2>British Shorthair</h2>
+            <p>British Shorthairs are calm, loyal, and very plush-looking.</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-img abyssinian"></div>
+        <div class="card-content">
+            <h2>Abyssinian</h2>
+            <p>Abyssinians are active, curious cats with sleek coats.</p>
+        </div>
+    </div>
+
+</div>
+
+<div class="footer-text">Cats Make Life Better.</div>
+
+</body>
+</html>
